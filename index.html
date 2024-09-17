@@ -1,10 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Business Mechanic</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bimech Works</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to Business Mechanic!</h1>
-    <p>I tune up businesses and get them running smoothly, just like a mechanic does with bikes.</p>
+  <header class="header">
+    <div class="logo">BIMECH.WORKS</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#diagnostic">Business Diagnostic</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 class="hero-title">Tune Up Your Business. Prepare for Flight.</h1>
+    <p class="hero-subtitle">Get Your Free Business Diagnostic Today!</p>
+    <a href="#diagnostic" class="cta-button">Get Your Free Diagnostic</a>
+    <div class="gears">
+      <img src="gear.png" alt="Gear" class="gear gear-large">
+      <img src="gear.png" alt="Gear" class="gear gear-small">
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-card">
+      <img src="service-icon1.png" alt="Service Icon">
+      <h3>Tune Up Your Business</h3>
+      <p>Optimize your business processes with our expert services.</p>
+    </div>
+    <div class="service-card">
+      <img src="service-icon2.png" alt="Service Icon">
+      <h3>Prepare for Growth</h3>
+      <p>We help you scale up and get ready for business expansion.</p>
+    </div>
+    <div class="service-card">
+      <img src="service-icon3.png" alt="Service Icon">
+      <h3>Free Business Diagnostic</h3>
+      <p>Receive a comprehensive analysis of your business performance.</p>
+    </div>
+  </section>
+
+  <section id="diagnostic" class="diagnostic">
+    <h2>Free Business Diagnostic</h2>
+    <p>Complete the form below and receive a detailed diagnostic of your business’s health.</p>
+    <form class="diagnostic-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Tell us about your business"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Bimech Works. All rights reserved.</p>
+  </footer>
 </body>
 </html>
