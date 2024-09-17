@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.header {
+  background-color: #2c2c2c;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.nav ul li {
+  margin: 0 15px;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #ffd700;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #ffd700;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffb700;
+  transform: scale(1.05);
+}
+
+.gears {
+  margin-top: 40px;
+}
+
+.gear {
+  position: absolute;
+  animation: rotate 10s infinite linear;
+}
+
+.gear-large {
+  width: 150px;
+  top: 50%;
+  left: 30%;
+}
+
+.gear-small {
+  width: 80px;
+  top: 40%;
+  right: 30%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.services {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.service-card {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.diagnostic {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+}
+
+.diagnostic-form input, .diagnostic-form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.diagnostic-form button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.diagnostic-form button:hover {
+  background-color: #444;
+}
+
+.footer {
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
