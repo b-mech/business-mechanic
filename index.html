@@ -1,65 +1,91 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bimech Works</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIMECH.WORKS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #d8ccb8;
+            font-family: 'Georgia', serif;
+        }
+        .custom-text-shadow {
+            text-shadow: 1px 1px 1px #000;
+        }
+        .gold-text {
+            color: #b78e5b;
+        }
+    </style>
 </head>
-<body>
-  <header class="header">
-    <div class="logo">BIMECH.WORKS</div>
-    <nav class="nav">
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#diagnostic">Business Diagnostic</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
+<body class="p-10">
 
-  <section class="hero">
-    <h1 class="hero-title">Tune Up Your Business. Prepare for Flight.</h1>
-    <p class="hero-subtitle">Get Your Free Business Diagnostic Today!</p>
-    <a href="#diagnostic" class="cta-button">Get Your Free Diagnostic</a>
-    <div class="gears">
-      <img src="gear.png" alt="Gear" class="gear gear-large">
-      <img src="gear.png" alt="Gear" class="gear gear-small">
-    </div>
-  </section>
+    <!-- Main Container -->
+    <div class="bg-neutral-100 rounded-xl p-8 shadow-lg max-w-screen-lg mx-auto">
+        <!-- Header -->
+        <header class="text-center">
+            <h1 class="text-4xl font-bold text-black">BIMECH.WORKS</h1>
+            <p class="text-lg text-black custom-text-shadow">TUNE UP YOUR BUSINESS. PREPARE FOR FLIGHT.</p>
+        </header>
 
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-card">
-      <img src="service-icon1.png" alt="Service Icon">
-      <h3>Tune Up Your Business</h3>
-      <p>Optimize your business processes with our expert services.</p>
-    </div>
-    <div class="service-card">
-      <img src="service-icon2.png" alt="Service Icon">
-      <h3>Prepare for Growth</h3>
-      <p>We help you scale up and get ready for business expansion.</p>
-    </div>
-    <div class="service-card">
-      <img src="service-icon3.png" alt="Service Icon">
-      <h3>Free Business Diagnostic</h3>
-      <p>Receive a comprehensive analysis of your business performance.</p>
-    </div>
-  </section>
+        <!-- Gear Icon Centerpiece -->
+        <div class="flex justify-center my-10">
+            <div class="rounded-full bg-neutral-400 p-10">
+                <i class="fas fa-cogs fa-5x text-neutral-800"></i>
+            </div>
+        </div>
 
-  <section id="diagnostic" class="diagnostic">
-    <h2>Free Business Diagnostic</h2>
-    <p>Complete the form below and receive a detailed diagnostic of your business’s health.</p>
-    <form class="diagnostic-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Tell us about your business"></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+        <!-- Section Meignal and Services -->
+        <div class="flex justify-around mb-8">
+            <button class="bg-gold-400 px-6 py-2 rounded-full text-black font-semibold">MEIGNAL</button>
+            <button class="bg-gold-400 px-6 py-2 rounded-full text-black font-semibold">SERVICES</button>
+        </div>
 
-  <footer class="footer">
-    <p>&copy; 2024 Bimech Works. All rights reserved.</p>
-  </footer>
+        <!-- Tagline -->
+        <div class="text-center mb-8">
+            <h2 class="text-2xl font-semibold">TUNE UP YOUR BUSINESS. PREPARE F FLAGNTIC.</h2>
+        </div>
+
+        <!-- Services Section -->
+        <div class="grid grid-cols-4 gap-6 text-center">
+            <!-- Service 1 -->
+            <div>
+                <div class="bg-neutral-200 p-6 rounded-full mb-4">
+                    <i class="fas fa-cog fa-3x"></i>
+                </div>
+                <h3 class="font-bold">SERVICES</h3>
+                <p class="text-sm mt-2">Tune up your business diagnostic tools with professional precision.</p>
+            </div>
+            <!-- Service 2 -->
+            <div>
+                <div class="bg-neutral-200 p-6 rounded-full mb-4">
+                    <i class="fas fa-tools fa-3x"></i>
+                </div>
+                <h3 class="font-bold">SERVICES</h3>
+                <p class="text-sm mt-2">Repair your business diagnostic systems for better efficiency.</p>
+            </div>
+            <!-- Service 3 -->
+            <div>
+                <div class="bg-neutral-200 p-6 rounded-full mb-4">
+                    <i class="fas fa-wrench fa-3x"></i>
+                </div>
+                <h3 class="font-bold">SERVICES</h3>
+                <p class="text-sm mt-2">Prepare your business tools for better diagnostic functionality.</p>
+            </div>
+            <!-- Service 4 -->
+            <div>
+                <div class="bg-neutral-200 p-6 rounded-full mb-4">
+                    <i class="fas fa-screwdriver fa-3x"></i>
+                </div>
+                <h3 class="font-bold">SERVICES</h3>
+                <p class="text-sm mt-2">Get your free business diagnostic tools for an optimized system.</p>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="flex justify-center mt-8">
+            <button class="bg-gold-400 px-6 py-2 rounded-full text-black font-semibold">GET YOUR FREE BUSINESS DIAGNOSTIC</button>
+        </div>
+    </div>
 </body>
 </html>
