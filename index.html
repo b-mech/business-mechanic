@@ -3,62 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BiMech Dashboard</title>
+    <title>BiMech - Engineering Success</title>
     <style>
+        /* General Styles */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
             background-color: #1a1a2e;
             color: #e0e0e0;
-        }
-        .container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
-            padding: 0 20px;
-            text-align: center;
         }
+
         header {
-            width: 100%;
-            padding: 20px;
             background-color: #2d2d42;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            color: #e0e0e0;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
+
         header .logo {
             font-size: 1.5em;
             font-weight: bold;
-        }
-        nav {
             display: flex;
-            gap: 15px;
+            align-items: center;
+            gap: 5px;
         }
-        nav a {
-            color: #e0e0e0;
+
+        header nav {
+            display: flex;
+        }
+
+        header nav a {
+            margin: 0 10px;
             text-decoration: none;
-            padding: 10px 20px;
-            background: linear-gradient(145deg, #2f2f44, #252536);
-            border: 1px solid #3a3a52;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            color: #e0e0e0;
+            font-size: 1em;
         }
-        nav a:hover {
-            background: linear-gradient(145deg, #3a3a52, #2f2f44);
-        }
-        .headline {
-            font-size: 2.5em;
-            margin: 20px 0;
+
+        .hero {
+            margin-top: 70px; /* Offset for fixed header */
+            text-align: center;
+            padding: 20px;
+            background: url('control-panel-bg.jpg') no-repeat center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             color: #c9c9d7;
         }
-        .subtext {
+
+        .hero h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
             font-size: 1.2em;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             color: #a9a9b7;
         }
+
         .cta-button {
             padding: 15px 30px;
             background-color: #3a3a52;
@@ -66,36 +79,139 @@
             text-decoration: none;
             font-size: 1em;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
         }
+
         .cta-button:hover {
             background-color: #505070;
+            box-shadow: 0 0 10px rgba(80, 80, 112, 0.8);
         }
+
+        .services {
+            display: grid;
+            gap: 10px;
+            padding: 20px;
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        .services .module {
+            background: linear-gradient(145deg, #2f2f44, #252536);
+            padding: 15px;
+            border: 1px solid #3a3a52;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .services .module:hover {
+            transform: scale(1.05);
+        }
+
+        .services .module h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .about,
+        .contact {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about p {
+            margin: 10px 0;
+        }
+
         footer {
-            margin-top: auto;
+            width: 100%;
             padding: 10px;
             background-color: #2d2d42;
-            color: #a9a9b7;
             text-align: center;
+            font-size: 0.9em;
+        }
+
+        /* Mobile-specific Styles */
+        @media (max-width: 600px) {
+            header nav {
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                right: 0;
+                background-color: #2d2d42;
+                width: 50%;
+                display: none;
+            }
+
+            header nav a {
+                padding: 10px 20px;
+                border-bottom: 1px solid #3a3a52;
+            }
+
+            header .hamburger {
+                display: block;
+                cursor: pointer;
+            }
+
+            header.nav-open nav {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 1.8em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">BiMech</div>
+        <div class="hamburger" onclick="toggleNav()">☰</div>
         <nav>
-            <a href="#about">About</a>
+            <a href="#hero">Home</a>
             <a href="#services">Services</a>
+            <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <div class="container">
-        <h1 class="headline">Advanced Mechanical Diagnostics</h1>
-        <p class="subtext">Streamline your operations with state-of-the-art control systems and industrial solutions.</p>
-        <a href="#get-started" class="cta-button">Get Started</a>
-    </div>
+    <section id="hero" class="hero">
+        <h1>Engineering Business Success with Grit and Ingenuity</h1>
+        <p>We diagnose and optimize your business mechanics for peak performance.</p>
+        <a href="#services" class="cta-button">Initiate Diagnostic</a>
+    </section>
+    <section id="services" class="services">
+        <div class="module">
+            <h3>Operational Efficiency</h3>
+            <p>Streamline your processes with data-driven strategies.</p>
+        </div>
+        <div class="module">
+            <h3>Market Strategy</h3>
+            <p>Target the right audience with precision analytics.</p>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>BiMech provides top-notch consulting to bring your business mechanics to peak performance.</p>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Name" required><br>
+            <input type="email" placeholder="Email" required><br>
+            <textarea placeholder="Message"></textarea><br>
+            <button type="submit" class="cta-button">Send Transmission</button>
+        </form>
+    </section>
     <footer>
-        &copy; 2024 BiMech. All rights reserved.
+        &copy; 2024 BiMech. System Status: Operational.
     </footer>
+    <script>
+        function toggleNav() {
+            const header = document.querySelector('header');
+            header.classList.toggle('nav-open');
+        }
+    </script>
 </body>
 </html>
