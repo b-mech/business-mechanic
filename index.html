@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    const hamburger = document.querySelector('.hamburger');
-const header = document.querySelector('header');
-
-// Toggle the 'nav-open' class on the header
-hamburger.addEventListener('click', () => {
-    header.classList.toggle('nav-open');
-});
 <head>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
@@ -15,8 +8,6 @@ hamburger.addEventListener('click', () => {
     <title>BiMech - Engineering Success</title>
     <div class="module">
     <i class="fas fa-cogs"></i>
-    <h3>Operational Efficiency</h3>
-    <p>Streamline  with data-driven strategies.</p>
 </div>
     <script>
     const ctaButton = document.querySelector('.cta-button');
@@ -24,6 +15,13 @@ hamburger.addEventListener('click', () => {
         ctaButton.style.boxShadow = '0 0 20px rgba(80, 80, 112, 1)';
     });
 </script>
+     const hamburger = document.querySelector('.hamburger');
+const header = document.querySelector('header');
+
+// Toggle the 'nav-open' class on the header
+hamburger.addEventListener('click', () => {
+    header.classList.toggle('nav-open');
+});
     <style>
         /* General Styles */
         body {
