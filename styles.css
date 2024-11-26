@@ -8,6 +8,10 @@
     align-items: center;
     text-align: center;
 }
+.services .module:hover {
+    transform: scale(1.1);
+    background: linear-gradient(145deg, #505070, #404060);
+}
 body {
     font-family: 'Roboto Condensed', sans-serif;
 }
