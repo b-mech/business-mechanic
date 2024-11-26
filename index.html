@@ -40,6 +40,29 @@
             z-index: 1000;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
+        .hamburger {
+            display: none; /* Default: hide hamburger menu */
+        }
+
+        @media (max-width: 600px) {
+            .hamburger {
+                display: block; /* Show on small screens */
+                cursor: pointer;
+            }
+
+            header nav {
+                display: none; /* Hide default menu */
+            }
+
+            header.nav-open nav {
+                display: flex; /* Show menu when hamburger is clicked */
+                flex-direction: column;
+                position: absolute;
+                right: 0;
+                top: 60px;
+                background-color: #2d2d42;
+                width: 50%;
+                box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
 
         header .logo {
             font-size: 1.5em;
