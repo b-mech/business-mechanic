@@ -1,5 +1,12 @@
 .hero {
     background: linear-gradient(to bottom, #1a1a2e, #252536);
+    height: 100vh; /* Ensure the section has height to display the gradient */
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 body {
     font-family: 'Roboto Condensed', sans-serif;
