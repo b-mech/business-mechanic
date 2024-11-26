@@ -38,3 +38,16 @@ body {
         opacity: 0.5;
     }
 }
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    header nav a {
+        font-size: 0.9em;
+    }
+}
